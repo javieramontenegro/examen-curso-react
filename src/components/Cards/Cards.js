@@ -14,17 +14,14 @@ const Cards = ({ cards }) => {
 
   return (
     <>
-      <>
-        <div className="flex flex-wrap justify-center w-full h-full">
-          {cards.slice(0, maxValue).map((poke, index) => {
-            const { url, name } = poke;
-            return <Card name={name} url={url} key={index} />;
-          })}
-        </div>
-        <div className=" w-full h-full flex justify-center my-8">
-          {maxValue <= cards.length && <Button loadMore={loadMore} />}
-        </div>
-      </>
+      {cards.slice(0, maxValue).map((poke, index) => {
+        const { url, name } = poke;
+        return <Card name={name} url={url} key={index} />;
+      })}
+
+      <div className=" w-full h-full flex justify-center my-8">
+        {maxValue <= cards.length && <Button loadMore={loadMore} />}
+      </div>
     </>
   );
 };

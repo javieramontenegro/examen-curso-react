@@ -12,7 +12,7 @@ const CardsList = () => {
       {doneFetch ? (
         cards.length ? (
           <>
-            <div className="w-full h-full flex flex-wrap justify-center px-6 md:px-20 pt-6">
+            <div className="w-full h-full flex flex-wrap justify-center px-6 md:px-24 pt-6">
               <Cards cards={cards} />
             </div>
           </>
