@@ -112,3 +112,6 @@ body {
 .wrapper-img:hover .img-poke-modal {
   transform: rotate(0);
 }
+.layout-cards {
+  max-width: 1280px;
+}

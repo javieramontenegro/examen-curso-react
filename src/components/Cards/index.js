@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { CardsContext } from "../../context/CardsContext";
 import Loading from "../Common/loading";
 import Cards from "./Cards";
+import "../../assets/css/styles.css";
 
 import "../../assets/css/styles.css";
 const CardsList = () => {
@@ -12,7 +13,7 @@ const CardsList = () => {
       {doneFetch ? (
         cards.length ? (
           <>
-            <div className="w-full h-full flex flex-wrap justify-center px-6 md:px-24 pt-6">
+            <div className="w-full h-full flex flex-wrap justify-center px-6 md:px-24 pt-6 layout-cards mx-auto">
               <Cards cards={cards} />
             </div>
           </>
