@@ -11,7 +11,7 @@ const Details = () => {
 
   useEffect(() => {
     fetchData(pokeIndex);
-  }, [pokeIndex]);
+  }, [pokeIndex, fetchData]);
 
   const TYPE_COLORS = {
     bug: "B1C12E",

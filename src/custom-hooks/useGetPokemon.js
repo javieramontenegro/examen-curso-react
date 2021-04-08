@@ -1,10 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
 const useGetPokemon = () => {
-  const pokemonIndexUrl = window.location.pathname.split("/")[2];
+  const pokeIndex = window.location.pathname.split("/")[2];
 
   const [pokeInfo, setPokeInfo] = useState();
-  const [pokeIndex, setPokeIndex] = useState(pokemonIndexUrl);
+  //const [pokeIndex, setPokeIndex] = useState(pokemonIndexUrl);
   const [load, setLoad] = useState(false);
   //const { pokeInfo, fetchData } = useContext(CardsContext);
   //console.log("poke index modal", pokemonIndex);

@@ -1,16 +1,15 @@
 import React, { useState, useEffect, useContext } from "react";
 import { CardsContext } from "../../context/CardsContext";
 import "../../assets/css/styles.css";
-import Loading from "../Common/loading";
+
 import { Link } from "react-router-dom";
 
 const Card = ({ name, url }) => {
   const [pokeName, setPokeName] = useState("");
-  const [imgLoading, setImgLoading] = useState(true);
+
   const [imageUrl, setImageUrl] = useState("");
   const [pokemonIndex, setPokemonIndex] = useState("");
   const { doneFetch } = useContext(CardsContext);
-  //const { setPokemonIndex, pokemonIndex } = useContext(CardsContext);
 
   console.log("poke index", pokemonIndex);
   useEffect(() => {
@@ -20,7 +19,7 @@ const Card = ({ name, url }) => {
     setImageUrl(imageUrl);
     setPokeName(name);
     setPokemonIndex(pokeIndex);
-  }, []);
+  }, [name, url]);
 
   return (
     <>
