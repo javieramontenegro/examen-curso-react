@@ -1,5 +1,5 @@
 import React from "react";
-import pikachu from "../../assets/img/pikachu.gif";
+import pikachu from "../../assets/img/pokemon-sad.jpg";
 const index = () => {
   return (
     <div
