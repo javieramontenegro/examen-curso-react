@@ -1,3 +1,5 @@
+//intenté poner esto en el package.json pero ahi estaba craco de tailwind y arruinaba todo el estilo, no supe como cambiarlo
+
 const path = require("path");
 
 module.exports = {
